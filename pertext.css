@@ -1,0 +1,30 @@
+:invalid {
+  background-color: red;
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 100%;
+}
+
+fieldset {
+  margin: 5px;
+}
+
+dd {
+  margin: 0;
+}
+
+#strategy-label {
+  color: #646464;
+  text-transform: uppercase;
+}
+
+#strategy {
+  height: 31px;
+  width: 132px;
+}
+
+#result {
+  width: 50px;
+}

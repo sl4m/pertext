@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="pertext.css">
+  <script type="text/javascript" src="pertext.min.js"></script>
+</head>
+<body>
+  <fieldset>
+    <dl>
+      <dt>
+        <label id="strategy-label" for="strategy">Strategy:</label>
+      </dt>
+      <dd>
+        <select id="strategy" size=2>
+          <option value="Pert Weighted Mean">Weighted Mean</option>
+          <option value="Plus Standard Deviation" selected="selected">Plus Standard Deviation</option>
+        </select>
+      </dd>
+    </dl>
+    <dl>
+      <dd>
+        <input id="optimistic" type="number" autofocus max="100" min="0" placeholder="O" />
+      </dd>
+    </dl>
+    <dl>
+      <dd>
+        <input id="realistic" type="number" max="100" min="0" placeholder="R" />
+      </dd>
+    </dl>
+    <dl>
+      <dd>
+        <input id="pessimistic" type="number" max="100" min="0" placeholder="P" />
+      </dd>
+    </dl>
+    <dl>
+      <dd>
+        <input id="result" disabled="disabled" placeholder="Result" />
+      </dd>
+    </dl>
+  </fieldset>
+</body>
+</html>
