@@ -1,6 +1,6 @@
 {
   "name" : "pertext",
-  "version" : "0.1.1",
+  "version" : "0.1.2",
   "description" : "PERT estimation tool",
   "icons" : {
     "16"  : "images/icon-16.png",
