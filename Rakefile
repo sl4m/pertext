@@ -27,7 +27,11 @@ namespace :build do
 
   task :bundle => "build:clean" do
     files = Dir.glob("#{LIB_DIR}/*.js")
+    header = "\"(function() {\""
+    footer = "\"})();\""
+    `echo #{header} >> #{UNPACKED_DIR}/pertext.js`
     `cat #{files.join(' ')} >> #{UNPACKED_DIR}/pertext.js`
+    `echo #{footer} >> #{UNPACKED_DIR}/pertext.js`
   end
 
   task :minify => "build:bundle" do
