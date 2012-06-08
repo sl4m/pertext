@@ -40,16 +40,11 @@ namespace :build do
   end
 
   task :copy_files do
-    files = %w[manifest.json pertext.html pertext.css]
+    files = %w[manifest.json pertext_background.png pertext.html pertext.css]
     `cp #{files.join(' ')} #{UNPACKED_DIR}`
 
-    images_files = %W[
-      #{IMAGES_DIR}/icon-16.png
-      #{IMAGES_DIR}/icon-19.png
-      #{IMAGES_DIR}/icon-48.png
-      #{IMAGES_DIR}/icon-128.png
-    ]
-    `cp #{images_files.join(' ')} #{UNPACKED_DIR}/images`
+    image_files = Dir.glob("#{IMAGES_DIR}/*.png")
+    `cp #{image_files.join(' ')} #{UNPACKED_DIR}/images`
   end
 
   task :zip do

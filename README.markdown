@@ -17,6 +17,7 @@ To run specs, run `rake`.
 ## Contributors
 
 * [Li-Hsuan](https://github.com/naush)
+* [Stephanie](https://github.com/smbriones) for the awesome new design
 
 ## Thanks
 

@@ -3,28 +3,58 @@
 }
 
 body {
-  font-family: Georgia, serif;
+  font-family: Gill Sans, serif;
   font-size: 100%;
+  width: 275px;
+}
+
+h3 {
+  color: #444;
+}
+
+p {
+  margin: 0.5em 0;
 }
 
 fieldset {
-  margin: 5px;
+  background: url("pertext_background.png");
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  margin: 5px 0;
 }
 
 dd {
   margin: 0;
 }
 
-#strategy-label {
-  color: #646464;
+label {
+  color: #BBB;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-#strategy {
-  height: 37px;
-  width: 160px;
+input[type=number], input#estimate {
+  border: 1px solid #CCC;
+  float: left;
+  font-size: 23px;
+  margin-right: 10px;
+  -webkit-border-radius: 4px;
+  width: 69px;
 }
 
-#result {
-  width: 50px;
+p#strategy label {
+  color: #333;
+  font-family: Gill Sans, serif;
+  letter-spacing: none;
+  text-transform: none;
+}
+
+input#estimate {
+  color: #59A80F;
+  margin-top: 0.5em;
+  width: 237px;
 }
