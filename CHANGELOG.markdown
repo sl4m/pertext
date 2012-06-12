@@ -1,3 +1,7 @@
+## 0.1.5
+
+* makes pertext less opinionated about zero-point estimates
+
 ## 0.1.4
 
 * improves design, thanks Stephanie!
