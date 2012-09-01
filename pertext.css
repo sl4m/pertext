@@ -24,10 +24,6 @@ fieldset {
   margin: 5px 0;
 }
 
-dd {
-  margin: 0;
-}
-
 label {
   color: #BBB;
   display: block;
@@ -35,6 +31,17 @@ label {
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+p#strategy label {
+  color: #333;
+  font-family: Gill Sans, serif;
+  letter-spacing: none;
+  text-transform: none;
+}
+
+div#pert-fields {
+  margin-top: 1em;
 }
 
 input[type=number], input#estimate {
@@ -46,15 +53,20 @@ input[type=number], input#estimate {
   width: 69px;
 }
 
-p#strategy label {
-  color: #333;
-  font-family: Gill Sans, serif;
-  letter-spacing: none;
-  text-transform: none;
+div#result {
+  float: left;
 }
 
 input#estimate {
   color: #59A80F;
-  margin-top: 0.5em;
-  width: 237px;
+  margin: 0.5em 0 0 0;
+  width: 202px;
+}
+
+button#clipboard {
+  margin-top: 1.6em;
+}
+
+button#clipboard img {
+  vertical-align: middle;
 }

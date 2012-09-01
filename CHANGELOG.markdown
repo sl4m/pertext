@@ -1,3 +1,7 @@
+## 0.1.6
+
+* adds clipboard button to copy estimate
+
 ## 0.1.5
 
 * makes pertext less opinionated about zero-point estimates

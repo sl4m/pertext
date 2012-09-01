@@ -7,11 +7,8 @@
   <body>
     <fieldset>
       <h3>pertext</h3>
-      <dl>
-        <dt>
-          <label id="strategy-label" for="strategy">Strategy:</label>
-        </dt>
-
+      <div>
+        <label id="strategy-label" for="strategy">Strategy:</label>
         <p id="strategy">
           <label>
             <input name="strategy" value="Pert Weighted Mean" type="radio" />
@@ -19,29 +16,21 @@
           </label>
           <label>
             <input name="strategy" checked="checked" value="Plus Standard Deviation" type="radio" />
-            Plus Standard Deviation</label>
+            Plus Standard Deviation
+          </label>
         </p>
-      </dl>
-      <dl>
-        <dd>
-          <input id="optimistic" type="number" autofocus max="100" min="0" placeholder="O" />
-        </dd>
-      </dl>
-      <dl>
-        <dd>
-          <input id="realistic" type="number" max="100" min="0" placeholder="R" />
-        </dd>
-      </dl>
-      <dl>
-        <dd>
-          <input id="pessimistic" type="number" max="100" min="0" placeholder="P" />
-        </dd>
-      </dl>
-      <dl>
-        <dd>
-          <input id="estimate" disabled="disabled" placeholder="Estimate" />
-        </dd>
-      </dl>
+      </div>
+      <div id='pert-fields'>
+        <input id="optimistic" type="number" max="100" min="0" placeholder="O" />
+        <input id="realistic" type="number" max="100" min="0" placeholder="R" />
+        <input id="pessimistic" type="number" max="100" min="0" placeholder="P" />
+      </div>
+      <div id='result'>
+        <input id="estimate" disabled="disabled" placeholder="Estimate" />
+        <button id='clipboard'>
+          <img src='images/clipboard.png' />
+        </button>
+      </div>
     </fieldset>
   </body>
 </html>
