@@ -1,3 +1,7 @@
+## 0.2.1
+
+* fixes a minor CSS issue on Chrome for Windows
+
 ## 0.2.0
 
 * new design, thanks again, Stephanie!
