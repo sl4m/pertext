@@ -1,3 +1,8 @@
+## 0.2.0
+
+* new design, thanks again, Stephanie!
+* stores strategy to local storage
+
 ## 0.1.6
 
 * adds clipboard button to copy estimate

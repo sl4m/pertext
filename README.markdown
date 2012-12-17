@@ -23,3 +23,4 @@ To run specs, run `rake`.
 
 * [8th Light](http://8thlight.com/) for Friday wazas.
 * [Aha-soft](http://www.aha-soft.com/) for the icon.
+* Scott Lewis, from The Noun Project, for the clipboard icon.

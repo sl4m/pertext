@@ -1,7 +1,7 @@
 describe("Pert", function() {
   var pert;
 
-  describe("PERT Weigted Mean", function() {
+  describe("PERT Weighted Mean", function() {
     beforeEach(function() {
       pert = Pert.initialize(Pert.WEIGHTED_MEAN);
     });
@@ -21,7 +21,7 @@ describe("Pert", function() {
 
   describe("Plus Standard Deviation", function() {
     beforeEach(function() {
-      pert = Pert.initialize(Pert.PLUS_STANDARD_DEVIATION);
+      pert = Pert.initialize(Pert.STANDARD_DEVIATION);
     });
 
     it("returns an estimate for 1,2,3", function() {

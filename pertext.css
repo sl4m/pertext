@@ -1,72 +1,197 @@
-:invalid {
-  background-color: red;
+body {
+  background: #FFF;
+  font-family: Lucida Grande, Verdana, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  width: 304px;
 }
 
-body {
-  font-family: Gill Sans, serif;
-  font-size: 100%;
-  width: 275px;
+fieldset {
+  background: #ECECEC;
+  border: 1px solid #DADADA;
+  margin: 10px 10px 10px 10px;
+  width: 260px;
 }
 
 h3 {
-  color: #444;
+  color: #AAA;
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 p {
   margin: 0.5em 0;
 }
 
-fieldset {
-  background: url("pertext_background.png");
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  margin: 5px 0;
+.weighted-mean, .standard-deviation {
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  color: #BABABA;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  font-size: 13px;
+  height: 80px;
+  margin-bottom: 38px;
+  padding-top: 20px;
+  position: relative;
+  width: 125px;
+}
+
+.weighted-mean {
+  background: url(images/w-mean.png) no-repeat #EFEFEF;
+  background-size: 22px;
+  background-position: 50% 19%;
+  margin-right: 10px;
+}
+
+.standard-deviation {
+  background: url(images/standard.png) no-repeat #EFEFEF;
+  background-size: 22px;
+  background-position: 50% 19%;
+}
+
+.weighted-mean:hover {
+  background: url(images/w-mean-active.png) no-repeat #2A78E4;
+  background-size: 22px;
+  background-position: 50% 18%;
+  border: 3px solid #065394;
+  color: #065394;
+}
+
+.standard-deviation:hover {
+  background: url(images/standard-active.png) no-repeat #2A78E4;
+  background-size: 22px;
+  background-position: 50% 18%;
+  border: 3px solid #065394;
+  color: #065394;
+}
+
+.active-wm {
+  background: url(images/w-mean-active.png) no-repeat #2A78E4;
+  background-size: 22px;
+  background-position: 50% 18%;
+  border: 3px solid #065394;
+  color: #065394;
+}
+
+.active-sd {
+  background: url(images/standard-active.png) no-repeat #2A78E4;
+  background-size: 22px;
+  background-position: 50% 18%;
+  border: 3px solid #065394;
+  color: #065394;
 }
 
 label {
   color: #BBB;
   display: block;
   font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+}
+
+#strategy {
+  clear: both;
 }
 
 p#strategy label {
   color: #333;
-  font-family: Gill Sans, serif;
   letter-spacing: none;
   text-transform: none;
 }
 
 div#pert-fields {
+  clear: both;
   margin-top: 1em;
+  overflow: hidden;
+  padding: 2px;
 }
 
-input[type=number], input#estimate {
-  border: 1px solid #CCC;
+#pert-fields span {
+  color: #CACACA;
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 5px;
+  width: 30%;
+}
+
+#estimate {
+  border: none;
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  background: #EFEFEF;
+  border: 1px solid #DDD;
   float: left;
   font-size: 23px;
   margin-right: 10px;
-  -webkit-border-radius: 4px;
-  width: 69px;
+  -webkit-border-radius: 8px;
+  border-radius: 10px;
+  padding: 8px;
+  width: 60px;
 }
 
-div#result {
-  float: left;
+#optimistic {
+  color: #2A78E4;
+}
+
+#realistic {
+  color: #2A78E4;
+}
+
+#pessimistic {
+  color: #2A78E4;
+  margin-right: 0;
+}
+
+:invalid {
+  background-color: #CF2A27 !important;
+  border: 1px solid #990000 !important;
+  color: #990000 !important;
+}
+
+#result {
+  padding: 0 33%;
+  position: relative;
+  margin: 20px 0 0 0;
+  border-top: 1px dashed #DDD;
+}
+
+div#result input {
+  font-size: 30px;
+  width: 85px;
+  text-align: center;
 }
 
 input#estimate {
-  color: #59A80F;
-  margin: 0.5em 0 0 0;
+  background: transparent;
+  color: #2A78E4;
+  margin: 5px 0 0 0;
   width: 202px;
 }
 
 button#clipboard {
-  margin-top: 1.6em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+  right: 60px;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
-button#clipboard img {
-  vertical-align: middle;
+.icon {
+  display: inline-block;
+}
+
+.points-text {
+  color: #CCC;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0 0 3px 0;
+  text-align: center;
+  width: 100%;
 }

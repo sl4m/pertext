@@ -1,7 +1,7 @@
 {
   "manifest_version" : 2,
   "name" : "pertext",
-  "version" : "0.1.6",
+  "version" : "0.2.0",
   "description" : "PERT estimation tool",
   "icons" : {
     "16"  : "images/icon-16.png",
@@ -15,5 +15,5 @@
   },
   "homepage_url" : "https://chrome.google.com/webstore/detail/jbbmfopbiibcgfedhckafpgbpmagljjh",
   "offline_enabled" : true,
-  "permissions": ["clipboardWrite"]
+  "permissions": ["clipboardWrite", "storage"]
 }

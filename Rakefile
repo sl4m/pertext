@@ -6,6 +6,13 @@ UNPACKED_DIR = File.join(ROOT_DIR, "unpacked")
 
 task :default => "test:run"
 
+require 'jshintrb/jshinttask'
+desc 'runs jshint'
+Jshintrb::JshintTask.new :jshint do |t|
+  t.pattern = 'lib/*.js'
+  t.options = :defaults
+end
+
 namespace :test do
   desc "runs unit tests"
   task :run do
@@ -26,7 +33,7 @@ namespace :build do
   end
 
   task :bundle => "build:clean" do
-    files = Dir.glob("#{LIB_DIR}/*.js")
+    files = %w(pert.js pertext.js init.js).map { |js| "#{LIB_DIR}/#{js}" }
     header = "\"(function() {\""
     footer = "\"})();\""
     `echo #{header} >> #{UNPACKED_DIR}/pertext.js`
@@ -40,7 +47,7 @@ namespace :build do
   end
 
   task :copy_files do
-    files = %w[manifest.json pertext_background.png pertext.html pertext.css]
+    files = %w[manifest.json pertext.html pertext.css]
     `cp #{files.join(' ')} #{UNPACKED_DIR}`
 
     image_files = Dir.glob("#{IMAGES_DIR}/*.png")

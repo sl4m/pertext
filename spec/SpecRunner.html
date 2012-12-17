@@ -4,29 +4,44 @@
 <head>
   <title>Jasmine Spec Runner</title>
 
-  <link rel="icon" type="image/png" href="support/jasmine-1.1.0/jasmine-favicon.png">
+  <link rel="shortcut icon" type="image/png" href="support/jasmine-1.3.0/jasmine_favicon.png">
+  <link rel="stylesheet" type="text/css" href="support/jasmine-1.3.0/jasmine.css">
+  <script type="text/javascript" src="support/jasmine-1.3.0/jasmine.js"></script>
+  <script type="text/javascript" src="support/jasmine-1.3.0/jasmine-html.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="support/jasmine-1.1.0/jasmine.css">
-  <script type="text/javascript" src="support/jasmine-1.1.0/jasmine.js"></script>
-  <script type="text/javascript" src="support/jasmine-1.1.0/jasmine-html.js"></script>
-
-  <!-- include spec files here... -->
-  <script type="text/javascript" src="pert_spec.js"></script>
+  <!-- include chrome stub -->
+  <script type="text/javascript">
+    window.chrome = {
+      storage : {
+        local : {
+          get : function() {},
+          set : function() {}
+        }
+      }
+    };
+  </script>
 
   <!-- include source files here... -->
   <script type="text/javascript" src="../lib/pert.js"></script>
+  <script type="text/javascript" src="../lib/pertext.js"></script>
+  <script type="text/javascript" src="support/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="support/jasmine-jquery.js"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/javascript" src="pert_spec.js"></script>
+  <script type="text/javascript" src="pertext_spec.js"></script>
 
   <script type="text/javascript">
     (function() {
       var jasmineEnv = jasmine.getEnv();
       jasmineEnv.updateInterval = 1000;
 
-      var trivialReporter = new jasmine.TrivialReporter();
+      var htmlReporter = new jasmine.HtmlReporter();
 
-      jasmineEnv.addReporter(trivialReporter);
+      jasmineEnv.addReporter(htmlReporter);
 
       jasmineEnv.specFilter = function(spec) {
-        return trivialReporter.specFilter(spec);
+        return htmlReporter.specFilter(spec);
       };
 
       var currentWindowOnload = window.onload;
