@@ -6,11 +6,14 @@ UNPACKED_DIR = File.join(ROOT_DIR, "unpacked")
 
 task :default => "test:run"
 
-require 'jshintrb/jshinttask'
-desc 'runs jshint'
-Jshintrb::JshintTask.new :jshint do |t|
-  t.pattern = 'lib/*.js'
-  t.options = :defaults
+begin
+  require 'jshintrb/jshinttask'
+  desc 'runs jshint'
+  Jshintrb::JshintTask.new :jshint do |t|
+    t.pattern = 'lib/*.js'
+    t.options = :defaults
+  end
+rescue Exception
 end
 
 namespace :test do

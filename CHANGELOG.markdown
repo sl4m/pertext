@@ -1,3 +1,7 @@
+## 0.2.2
+
+* fixes a key event issue
+
 ## 0.2.1
 
 * fixes a minor CSS issue on Chrome for Windows
