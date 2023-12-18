@@ -1,3 +1,7 @@
+## 0.3.0
+
+* updates to manifest v3
+
 ## 0.2.2
 
 * fixes a key event issue

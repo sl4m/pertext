@@ -1,26 +1,14 @@
 ## pertext
 
-A PERT estimation tool as a Google Chrome extension.  It is used to estimate stories.
+A PERT estimation tool as a Google Chrome extension to estimate stories.
 
-## For the user
+## Install
 
-Go to the [Chrome Web Store](https://chrome.google.com/webstore/detail/jbbmfopbiibcgfedhckafpgbpmagljjh) and install it.
-
-## For the developer
-
-Tool requirements:
-
-* jsmin (`brew install jsmin`)
-
-To run specs, run `rake`.
-
-## Contributors
-
-* [Li-Hsuan](https://github.com/naush)
-* [Stephanie](https://github.com/smbriones) for the awesome new design
+[Chrome Web Store](https://chrome.google.com/webstore/detail/jbbmfopbiibcgfedhckafpgbpmagljjh)
 
 ## Thanks
 
-* [8th Light](http://8thlight.com/) for Friday wazas.
+* [Li-Hsuan](https://github.com/naush)
+* [Stephanie](https://github.com/smbriones) for the awesome new design
 * [Aha-soft](http://www.aha-soft.com/) for the icon.
 * Scott Lewis, from The Noun Project, for the clipboard icon.
